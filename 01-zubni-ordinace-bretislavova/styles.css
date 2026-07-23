@@ -416,6 +416,8 @@ form.appt input:focus, form.appt textarea:focus { outline: none; border-color: v
   .burger.open span:nth-child(2) { opacity: 0; }
   .burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .nav-cta { display: none; }
+  .logo { font-size: 1.1rem; }
   .hero-inner { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr; }
   .foot-grid { grid-template-columns: 1fr; }
