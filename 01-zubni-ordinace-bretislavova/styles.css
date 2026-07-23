@@ -437,9 +437,6 @@ form.appt input:focus, form.appt textarea:focus { outline: none; border-color: v
 .compare-frame { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); background: #fff; }
 .compare-frame img { width: 100%; display: block; }
 .compare-caption { margin-top: 12px; font-size: 0.88rem; color: #566251; }
-.compare-mobile-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; max-width: 720px; margin: 0 auto; justify-items: center; }
-.compare-frame.phone { border: 8px solid #262421; border-radius: 18px; max-width: 280px; overflow: hidden; }
 @media (max-width: 760px) {
   .compare-pair { grid-template-columns: 1fr; }
-  .compare-mobile-pair { grid-template-columns: 1fr; gap: 50px; }
 }
