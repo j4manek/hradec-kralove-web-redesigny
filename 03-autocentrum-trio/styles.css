@@ -1,0 +1,166 @@
+/* Autocentrum Trio — precision automotive corporate */
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --navy: #0d1826;
+  --navy-2: #142234;
+  --steel: #2a3c52;
+  --chrome: #d7dde3;
+  --chrome-dim: #8b98a8;
+  --red: #e63946;
+  --red-deep: #b8232e;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--navy);
+  color: var(--chrome);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+h1, h2, h3, .display {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  margin: 0;
+  color: #fff;
+}
+
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: 1160px; margin: 0 auto; padding: 0 32px; }
+
+/* Header */
+header.site { position: sticky; top: 0; z-index: 50; background: rgba(13,24,38,0.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--steel); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 32px; max-width: 1160px; margin: 0 auto; }
+.logo { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase; color: #fff; display: flex; align-items: center; gap: 10px; letter-spacing: 0.02em; }
+.logo span { color: var(--red); }
+.nav-links { display: flex; gap: 32px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500; }
+.nav-links a { position: relative; padding: 6px 0; color: var(--chrome-dim); }
+.nav-links a:hover, .nav-links a.active { color: #fff; }
+.nav-links a.active::after { content:''; position:absolute; left:0; right:0; bottom:0; height:2px; background: var(--red); }
+.nav-cta { background: var(--red); color: #fff; padding: 11px 24px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; clip-path: polygon(0 0,100% 0,100% 70%,94% 100%,0 100%); }
+.nav-cta:hover { background: var(--red-deep); }
+.burger { display: none; }
+
+/* Hero */
+.hero {
+  position: relative; padding: 110px 32px 100px; overflow: hidden;
+  background:
+    linear-gradient(120deg, rgba(230,57,70,0.08), transparent 40%),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,0.015) 0 2px, transparent 2px 34px);
+  border-bottom: 1px solid var(--steel);
+}
+.hero-inner { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 60px; align-items: center; }
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; font-family:'Rajdhani',sans-serif; font-weight:600; font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 20px; }
+.eyebrow::before { content:''; width: 30px; height: 2px; background: var(--red); }
+.hero h1 { font-size: clamp(2.6rem, 5vw, 4.2rem); line-height: 1.02; color: #fff; }
+.hero h1 .accent { color: var(--red); }
+.hero p.lead { margin-top: 22px; max-width: 48ch; color: var(--chrome-dim); font-size: 1.05rem; font-weight: 300; }
+.hero-actions { margin-top: 34px; display: flex; gap: 16px; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 28px; font-family:'Rajdhani',sans-serif; font-weight: 600; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.03em; transition: all 0.2s ease; }
+.btn-primary { background: var(--red); color: #fff; clip-path: polygon(0 0,100% 0,100% 70%,94% 100%,0 100%); }
+.btn-primary:hover { background: var(--red-deep); }
+.btn-ghost { border: 1.5px solid var(--steel); color: #fff; }
+.btn-ghost:hover { border-color: var(--red); }
+
+.hero-panel { background: var(--navy-2); border: 1px solid var(--steel); padding: 34px; position: relative; }
+.hero-panel::before { content:''; position:absolute; top:0; left:0; width: 40px; height: 3px; background: var(--red); }
+.hero-panel .row { display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid var(--steel); }
+.hero-panel .row:last-child { border-bottom: none; }
+.hero-panel .row .k { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--chrome-dim); }
+.hero-panel .row .v { font-family:'Rajdhani',sans-serif; font-weight: 600; color: #fff; font-size: 1.05rem; }
+
+/* Trust */
+.trust { background: var(--navy-2); border-bottom: 1px solid var(--steel); }
+.trust-inner { max-width: 1160px; margin: 0 auto; padding: 26px 32px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 18px; font-size: 0.85rem; color: var(--chrome-dim); }
+.trust-inner div { display: flex; align-items: center; gap: 10px; }
+.trust-inner strong { color: var(--red); font-family: 'Rajdhani',sans-serif; }
+
+/* Section */
+section.block { padding: 100px 32px; }
+.section-head { max-width: 640px; margin-bottom: 56px; }
+.section-head h2 { font-size: clamp(2rem, 3.6vw, 2.8rem); color: #fff; }
+.section-head p { margin-top: 16px; color: var(--chrome-dim); font-size: 1rem; }
+
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.card { background: var(--navy-2); border: 1px solid var(--steel); padding: 32px 26px; transition: border-color 0.2s ease, transform 0.2s ease; }
+.card:hover { border-color: var(--red); transform: translateY(-4px); }
+.card .num { font-family: 'Rajdhani', sans-serif; font-weight: 700; color: var(--red); font-size: 1.6rem; display: block; margin-bottom: 14px; }
+.card h3 { font-size: 1.2rem; margin-bottom: 10px; color: #fff; }
+.card p { font-size: 0.9rem; color: var(--chrome-dim); margin: 0; }
+
+/* Band */
+.band { background: var(--red); color: #fff; padding: 70px 32px; }
+.band-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
+.band h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); max-width: 22ch; color: #fff; }
+.band .btn-primary { background: #fff; color: var(--red); }
+.band .btn-primary:hover { background: #e9e9e9; }
+
+/* CTA strip */
+.cta-strip { background: var(--navy-2); border-top: 1px solid var(--steel); padding: 80px 32px; }
+.cta-inner { max-width: 1160px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+.cta-inner h2 { font-size: clamp(1.6rem, 2.8vw, 2.1rem); color: #fff; max-width: 26ch; }
+
+/* Footer */
+footer.site { padding: 60px 32px 40px; background: #0a1420; color: var(--chrome-dim); border-top: 3px solid var(--red); }
+.foot-grid { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--steel); }
+.foot-grid h4 { color: #fff; font-family:'Rajdhani',sans-serif; font-size: 0.95rem; letter-spacing: 0.08em; margin-bottom: 16px; }
+.foot-grid p, .foot-grid a { font-size: 0.88rem; display: block; margin-bottom: 8px; }
+.foot-grid a:hover { color: #fff; }
+.foot-logo { font-family: 'Rajdhani', sans-serif; font-weight: 700; text-transform: uppercase; color: #fff; font-size: 1.3rem; margin-bottom: 14px; }
+.foot-bottom { max-width: 1160px; margin: 0 auto; padding-top: 22px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 0.78rem; }
+
+/* Page hero (subpages) */
+.page-hero { padding: 64px 32px 54px; border-bottom: 1px solid var(--steel); background: var(--navy-2); }
+.page-hero .wrap { max-width: 1160px; }
+.page-hero h1 { font-size: clamp(2.1rem, 3.8vw, 3rem); color: #fff; }
+.breadcrumb { font-size: 0.8rem; color: var(--chrome-dim); margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.06em; }
+.breadcrumb a { color: var(--red); }
+
+/* Services detail */
+.service-list { display: flex; flex-direction: column; }
+.service-row { display: grid; grid-template-columns: 80px 1fr 160px; gap: 26px; align-items: start; padding: 32px 0; border-bottom: 1px solid var(--steel); }
+.service-row .num { font-family:'Rajdhani',sans-serif; font-weight: 700; color: var(--red); font-size: 1.4rem; }
+.service-row h3 { font-size: 1.2rem; margin-bottom: 8px; color: #fff; }
+.service-row p { color: var(--chrome-dim); font-size: 0.92rem; }
+.service-row .price { text-align: right; font-weight: 600; color: #fff; align-self: center; font-family:'Rajdhani',sans-serif; }
+
+/* Contact */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.contact-card { background: var(--navy-2); border: 1px solid var(--steel); padding: 34px; }
+.contact-row { display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--steel); }
+.contact-row:last-child { border-bottom: none; }
+.contact-row .ic { color: var(--red); flex-shrink: 0; }
+.contact-row strong { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--chrome-dim); margin-bottom: 3px; }
+.contact-row a, .contact-row span { font-size: 1.02rem; color: #fff; }
+.map-embed { border: 1px solid var(--steel); overflow: hidden; min-height: 320px; }
+.map-embed iframe { width: 100%; height: 100%; border: 0; display: block; filter: invert(0.92) hue-rotate(180deg) contrast(0.9); }
+
+form.appt { display: flex; flex-direction: column; gap: 16px; margin-top: 8px; }
+form.appt label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--chrome-dim); }
+form.appt input, form.appt textarea, form.appt select {
+  width: 100%; padding: 13px 16px; border: 1px solid var(--steel); background: var(--navy);
+  color: #fff; font-family: 'IBM Plex Sans', sans-serif; font-size: 0.95rem;
+}
+form.appt input:focus, form.appt textarea:focus, form.appt select:focus { outline: none; border-color: var(--red); }
+
+@media (max-width: 860px) {
+  .nav-links { display: none; }
+  .burger { display: flex; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
+  .burger span { width: 24px; height: 2px; background: #fff; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .foot-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .band-inner { flex-direction: column; align-items: flex-start; }
+  .service-row { grid-template-columns: 40px 1fr; }
+  .service-row .price { grid-column: 2; text-align: left; }
+  .cta-inner { flex-direction: column; align-items: flex-start; }
+}

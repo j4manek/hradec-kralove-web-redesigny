@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — M-DENT</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="sq"></span>M-DENT</a>
+    <div class="nav-links">
+      <a href="index.html">Domů</a>
+      <a href="sluzby.html">Služby</a>
+      <a href="kontakt.html" class="active">Kontakt</a>
+    </div>
+    <a href="tel:+420737287142" class="nav-cta">737 287 142</a>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Domů</a> / Kontakt</div>
+    <h1>Objednejte se k nám</h1>
+  </div>
+</section>
+
+<section class="block" style="padding-top:60px">
+  <div class="wrap contact-grid">
+    <div class="contact-card">
+      <div class="contact-row">
+        <span class="ic">☎</span>
+        <div><strong>Telefon</strong><a href="tel:+420737287142">737 287 142</a></div>
+      </div>
+      <div class="contact-row">
+        <span class="ic">✉</span>
+        <div><strong>E-mail</strong><a href="mailto:zlatamanaskova@mdent.cz">zlatamanaskova@mdent.cz</a></div>
+      </div>
+      <div class="contact-row">
+        <span class="ic">⚑</span>
+        <div><strong>Adresa ordinace</strong><span>Veverkova 945, 500 02 Hradec Králové</span></div>
+      </div>
+      <div class="contact-row">
+        <span class="ic">⏱</span>
+        <div><strong>Ordinační dny</strong><span>Úterý 8:00–14:00 · Středa 8:00–15:00 · Čtvrtek 8:00–18:00</span></div>
+      </div>
+
+      <form class="appt" onsubmit="return false;">
+        <label>Jméno</label>
+        <input type="text" placeholder="Jan Novák" required>
+        <label>Telefon nebo e-mail</label>
+        <input type="text" placeholder="+420 700 000 000" required>
+        <label>Důvod návštěvy</label>
+        <textarea rows="3" placeholder="Krátký popis (např. bolest, preventivní prohlídka...)"></textarea>
+        <button type="submit" class="btn btn-primary" style="border:none;cursor:pointer;justify-content:center;">Odeslat poptávku</button>
+      </form>
+    </div>
+
+    <div class="map-embed">
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=15.828%2C50.203%2C15.848%2C50.213&layer=mapnik&marker=50.208%2C15.838" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="foot-grid">
+    <div>
+      <div class="foot-logo">M-DENT</div>
+      <p>Stomatologická ordinace MUDr. Zlaty Maňaskové v Hradci Králové.</p>
+    </div>
+    <div>
+      <h4>Navigace</h4>
+      <a href="index.html">Domů</a>
+      <a href="sluzby.html">Služby</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+    <div>
+      <h4>Kontakt</h4>
+      <a href="tel:+420737287142">737 287 142</a>
+      <a href="mailto:zlatamanaskova@mdent.cz">zlatamanaskova@mdent.cz</a>
+      <span>Veverkova 945, Hradec Králové</span>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>&copy; 2026 M-DENT</span>
+    <span>Ukázkový redesign webu</span>
+  </div>
+</footer>
+
+</body>
+</html>
