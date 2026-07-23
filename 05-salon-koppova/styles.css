@@ -127,9 +127,18 @@ form.appt input, form.appt textarea {
 form.appt input:focus, form.appt textarea:focus { outline: none; border-color: var(--gold); }
 
 @media (max-width: 860px) {
-  .nav-links { display: none; }
+  .nav-links {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; gap: 0; background: var(--black-2);
+    border-bottom: 1px solid var(--line); padding: 8px 32px 22px;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 14px 0; border-bottom: 1px solid var(--line); text-align: center; }
   .burger { display: flex; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
-  .burger span { width: 22px; height: 1px; background: var(--ivory); }
+  .burger span { width: 22px; height: 1px; background: var(--ivory); transition: transform 0.2s ease, opacity 0.2s ease; }
+  .burger.open span:nth-child(2) { opacity: 0; }
+  .burger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .burger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
   .grid-3 { grid-template-columns: 1fr; }
   .foot-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }

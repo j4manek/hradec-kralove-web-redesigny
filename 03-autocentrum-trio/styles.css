@@ -152,9 +152,18 @@ form.appt input, form.appt textarea, form.appt select {
 form.appt input:focus, form.appt textarea:focus, form.appt select:focus { outline: none; border-color: var(--red); }
 
 @media (max-width: 860px) {
-  .nav-links { display: none; }
+  .nav-links {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; gap: 0; background: var(--navy-2);
+    border-bottom: 1px solid var(--steel); padding: 8px 32px 22px;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 14px 0; border-bottom: 1px solid var(--steel); }
   .burger { display: flex; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
-  .burger span { width: 24px; height: 2px; background: #fff; }
+  .burger span { width: 24px; height: 2px; background: #fff; transition: transform 0.2s ease, opacity 0.2s ease; }
+  .burger.open span:nth-child(2) { opacity: 0; }
+  .burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
   .hero-inner { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr; }
   .foot-grid { grid-template-columns: 1fr; }
