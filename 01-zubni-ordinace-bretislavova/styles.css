@@ -1,4 +1,4 @@
-/* Zubní ordinace Břetislavova — warm clinical minimalism */
+/* Zubní ordinace Břetislavova - warm clinical minimalism */
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap');
 
@@ -414,4 +414,19 @@ form.appt input:focus, form.appt textarea:focus { outline: none; border-color: v
   .service-row { grid-template-columns: 50px 1fr; }
   .service-row .price { grid-column: 2; text-align: left; }
   .cta-inner { flex-direction: column; align-items: flex-start; }
+}
+
+/* --- Před / po porovnání --- */
+.compare-block { padding: 70px 32px 100px; }
+.compare-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 60px; }
+.compare-col { }
+.compare-tag { display: inline-flex; align-items: center; gap: 8px; padding: 7px 16px; border-radius: 100px; font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 14px; }
+.compare-tag.before { background: rgba(193,115,77,0.15); color: var(--terracotta-deep); }
+.compare-tag.after { background: rgba(124,152,133,0.18); color: var(--sage-deep); }
+.compare-frame { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); background: #fff; }
+.compare-frame img { width: 100%; display: block; }
+.compare-caption { margin-top: 12px; font-size: 0.88rem; color: #566251; }
+.compare-mobile-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; max-width: 640px; }
+@media (max-width: 760px) {
+  .compare-pair, .compare-mobile-pair { grid-template-columns: 1fr; }
 }

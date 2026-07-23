@@ -1,4 +1,4 @@
-/* Kadeřnictví V Kopečku — heritage craft boutique */
+/* Kadeřnictví V Kopečku - heritage craft boutique */
 
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;1,400&family=Karla:wght@300;400;500;600&display=swap');
 
@@ -143,4 +143,19 @@ form.appt input:focus, form.appt textarea:focus { outline: none; border-color: v
   .service-row { grid-template-columns: 40px 1fr; }
   .service-row .price { grid-column: 2; text-align: left; }
   .cta-inner { flex-direction: column; align-items: flex-start; }
+}
+
+/* --- Před / po porovnání --- */
+.compare-block { padding: 70px 32px 100px; }
+.compare-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 60px; }
+.compare-col { }
+.compare-tag { display: inline-flex; align-items: center; gap: 8px; padding: 7px 16px; border-radius: 100px; font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 14px; }
+.compare-tag.before { background: rgba(168,80,46,0.12); color: var(--brick-deep); }
+.compare-tag.after { background: rgba(201,154,63,0.2); color: var(--brick); }
+.compare-frame { border: 1px solid var(--line); border-radius: 6px; overflow: hidden; box-shadow: var(--shadow); background: #fff; }
+.compare-frame img { width: 100%; display: block; }
+.compare-caption { margin-top: 12px; font-size: 0.88rem; color: #5a473a; }
+.compare-mobile-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; max-width: 640px; }
+@media (max-width: 760px) {
+  .compare-pair, .compare-mobile-pair { grid-template-columns: 1fr; }
 }

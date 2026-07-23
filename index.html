@@ -3,25 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ukázkové redesigny webů — Hradec Králové</title>
+<title>Ukázkové redesigny webů - Hradec Králové</title>
 <style>
   body { margin:0; background:#101010; color:#f2efe9; font-family: system-ui, -apple-system, sans-serif; padding: 60px 24px; }
-  .wrap { max-width: 840px; margin: 0 auto; }
+  .wrap { max-width: 900px; margin: 0 auto; }
   h1 { font-size: 1.9rem; margin-bottom: 8px; }
-  p.lead { color: #a8a29a; margin-bottom: 40px; }
+  h2.section { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em; color: #8a8478; margin: 48px 0 16px; }
+  p.lead { color: #a8a29a; margin-bottom: 16px; max-width: 65ch; }
   ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
   li a { display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; background: #1a1a1a; border: 1px solid #2c2c2c; border-radius: 12px; color: #f2efe9; text-decoration: none; transition: border-color .2s ease, transform .2s ease; }
   li a:hover { border-color: #f2b807; transform: translateX(4px); }
   li a span.tag { font-size: 0.78rem; color: #8a8478; text-transform: uppercase; letter-spacing: 0.06em; }
   li a strong { font-size: 1.05rem; }
+  li a.confirmed { border-color: #f2b807; }
+  li a.confirmed span.tag { color: #f2b807; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>Ukázkové redesigny webů — Hradec Králové</h1>
-  <p class="lead">Rychlé nástřely nového webu pro 6 firem s nejzastaralejším nebo nefunkčním webem. Ukázka, ne finální produkt.</p>
+  <h1>Ukázkové redesigny webů - Hradec Králové</h1>
+  <p class="lead">Rychlé nástřely nového webu pro firmy v Hradci Králové. Ukázka, ne finální produkt.</p>
+
+  <h2 class="section">Potvrzené případy (skutečně zastaralý web, se srovnáním před/po)</h2>
   <ul>
-    <li><a href="01-zubni-ordinace-bretislavova/"><strong>Zubní ordinace Břetislavova</strong><span class="tag">Zubař</span></a></li>
+    <li><a class="confirmed" href="01-zubni-ordinace-bretislavova/"><strong>Zubní ordinace Břetislavova</strong><span class="tag">Zubař - před/po</span></a></li>
+    <li><a class="confirmed" href="07-kadernictvi-v-kopecku/"><strong>Kadeřnictví V Kopečku</strong><span class="tag">Kadeřnictví - před/po</span></a></li>
+  </ul>
+
+  <h2 class="section">Ukázky designu (aktuální web firmy je ve skutečnosti v pořádku)</h2>
+  <p class="lead" style="font-size:0.9rem;">Tyto redesigny vznikly dřív, než jsme ověřili skutečné weby reálným screenshotem. Weby těchto firem nejsou zastaralé ani nefunkční - ukázky zůstávají jen jako portfolio design stylů, ne jako podklad pro oslovení.</p>
+  <ul>
     <li><a href="02-autoservis-trumf/"><strong>Autoservis Trumf</strong><span class="tag">Autoservis</span></a></li>
     <li><a href="03-autocentrum-trio/"><strong>Autocentrum Trio</strong><span class="tag">Autoservis / prodej</span></a></li>
     <li><a href="04-m-kadernictvi/"><strong>M Kadeřnictví</strong><span class="tag">Kadeřnictví</span></a></li>
